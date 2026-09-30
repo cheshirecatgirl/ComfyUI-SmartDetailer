@@ -1,0 +1,2 @@
+# No mandatory third-party packages beyond ComfyUI itself.
+# Optional YOLO Detector: install `ultralytics` in the ComfyUI environment.

@@ -1,0 +1,16 @@
+[project]
+name = "comfyui-smartdetailer"
+version = "1.0.0"
+description = "Masked region detailing and extraction for ComfyUI"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+
+[project.urls]
+Repository = "https://github.com/cheshirecatgirl/ComfyUI-SmartDetailer"
+
+[tool.comfy]
+DisplayName = "Smart Detailer"
+requires-comfyui = ">=0.34.0"
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

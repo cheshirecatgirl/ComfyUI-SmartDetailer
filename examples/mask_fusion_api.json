@@ -1,0 +1,7 @@
+{
+  "1": {"class_type": "SolidMask", "inputs": {"value": 1.0, "width": 64, "height": 64}},
+  "2": {"class_type": "SolidMask", "inputs": {"value": 0.5, "width": 64, "height": 64}},
+  "3": {"class_type": "SmartDetailerMaskFusion", "inputs": {"mask_a": ["1", 0], "mask_b": ["2", 0], "operation": "subtract", "batch_mode": "pairwise"}},
+  "4": {"class_type": "MaskToImage", "inputs": {"mask": ["3", 0]}},
+  "5": {"class_type": "SaveImage", "inputs": {"images": ["4", 0], "filename_prefix": "smart_detailer_smoke"}}
+}
